@@ -42,7 +42,7 @@ function Login() {
                               <div className="form-group">
                                 <Field
                                   name="email"
-                                  type="email"
+                                  type="email" 
                                   className="form-control form-control-user"
                                   id="email"
                                   aria-describedby="emailHelp"
