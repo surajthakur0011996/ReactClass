@@ -11,12 +11,16 @@ import Child2 from './components/child2';
 import Formik1 from  './components/login/Formik1';
 // import Login from './components/login/Login.js';
 import LoginForm from './components/login/LoginForm';
+import TernaryOperator from './components/ternaryOperator'
+import { BrowserRouter} from 'react-router-dom'
+ 
 
 
 const data1=createContext();
 const data2=createContext();
 
 function App() {
+
   // const [obj,setObj]=useState({
   //   name:"John doe",
   //   age:12
@@ -37,11 +41,16 @@ function App() {
   // const address="123,park street, California"
 
   return (
-    // <Formik1 />
-    <LoginForm></LoginForm>
-    
+    <BrowserRouter>
+    {/* <Formik1 /> */}
+    <>
+    {/* <LoginForm></LoginForm> */}
+
+    <TernaryOperator></TernaryOperator>
       
-     
+      </>
+      
+     </BrowserRouter>
   );
 }
 
