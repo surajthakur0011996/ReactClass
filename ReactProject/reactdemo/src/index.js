@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals'; 
 import './assets/css/sb-admin-2.min.css';
-
+import { BrowserRouter} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter >
+    <Suspense fallback={<div><h1>Loading...</h1></div>}>
     <App />
+    </Suspense>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
