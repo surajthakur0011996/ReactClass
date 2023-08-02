@@ -1,8 +1,25 @@
-import React from "react";
+import React,{useState} from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { store } from "../../store";
+import { decrement, increment } from "../../reducers/counterSlice";
 
 const Dashboard = () => {
+  const [values,setValues]=useState("0")
+  const state = useSelector((state)=>state.counter);
+  const disptach = useDispatch();
   return (
     <>
+    <button onClick={()=>{disptach(increment())}}>Increment</button>
+    <div>       
+    <input
+          type="text"
+          value={state?.value} 
+    
+        />
+
+    </div>
+    <button onClick={()=>{disptach(decrement())}}>Decrement</button> 
+
       <div id="content-wrapper" className="d-flex flex-column">
         <div id="content">
           <div className="container-fluid">

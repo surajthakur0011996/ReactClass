@@ -1,5 +1,6 @@
 import React from "react";
-
+import Dropdown from 'react-bootstrap/Dropdown';
+ 
 const Header = () => {
     return (
  
@@ -159,8 +160,21 @@ const Header = () => {
     </li>
 
     <div className="topbar-divider d-none d-sm-block"></div>
+    {/* <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item >Action</Dropdown.Item>
+        <Dropdown.Item >Another action</Dropdown.Item>
+        <Dropdown.Item >Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>   */}
 
     <li className="nav-item dropdown no-arrow">
+
+   
         <a className="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span className="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>

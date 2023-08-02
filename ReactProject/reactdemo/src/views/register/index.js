@@ -77,7 +77,7 @@ function Register() {
                         </Formik>
                             <hr />
                             <div className="text-center">
-                                <a className="small" href="forgot-password.html">Forgot Password?</a>
+                                <a className="small">Forgot Password?</a>
                             </div>
                             <div className="text-center">
                                 <Link className="small" to='/login'>Already have an account? Login!</Link>

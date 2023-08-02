@@ -1,11 +1,11 @@
-import { axiosinstance } from "../instance";
+import { axiosinstance } from "../interceptors";
 
 export const login = (data) => {
  return axiosinstance.post("auth/login",data);
 };
 
-export const productList = async() => {
-    return await axiosinstance.get("products");
+export const productList = async(skip) => {
+    return await axiosinstance.get("products?limit=10&skip="+skip);
 };
 
 
